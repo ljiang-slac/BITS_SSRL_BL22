@@ -32,6 +32,16 @@ To start the bluesky instrument session in a ipython execute the next command in
 ipython
 ```
 
+## If Warning "NumExpr detected 24 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16." Do 
+```bash
+import os
+os.environ["NUMEXPR_MAX_THREADS"] = "24"  # or however many threads you want
+import numexpr
+```
+
+
+
+
 ## Jupyter Notebook Start
 Start JupyterLab, a Jupyter notebook server, or a notebook, VSCode.
 
