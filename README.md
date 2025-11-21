@@ -18,6 +18,8 @@ pip install apsbits
 export YOUR_INSTRUMENT_NAME=new_instrument
 create-bits $YOUR_INSTRUMENT_NAME
 pip install -e .
+## This might install some dependencies, avoids downloading build deps at all and uses your already-installed setuptools, try
+pip install -e . --no-build-isolation --no-index --find-links .
 ```
 
 
