@@ -21,8 +21,9 @@ pip install -e .
 ```
 
 ## This might install some dependencies, avoids downloading build deps at all and uses your already-installed setuptools, try
+```bash
 pip install -e . --no-build-isolation --no-index --find-links .
-
+```
 
 ## IPython console Start
 
