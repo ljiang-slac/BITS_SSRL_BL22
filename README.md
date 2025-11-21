@@ -11,7 +11,7 @@ conda create -y -n $ENV_NAME python=3.11
 conda activate $ENV_NAME
 pip install apsbits
 ```
-
+for example, ENV_NAME=BITS_SSRL_BL22_env
 
 ## Creating a New Instrument
 ```bash
