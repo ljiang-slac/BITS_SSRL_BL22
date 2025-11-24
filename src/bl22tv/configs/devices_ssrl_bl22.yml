@@ -1,0 +1,15 @@
+# Guarneri-style device YAML configuration
+# Devices specific to SSRL BL22
+
+ophyd.EpicsMotor:
+  - name: SPEAR
+    prefix: "BL22:MC1:MOTOR1"
+    labels: ["mono", "motor"]
+    read_attrs: ['user_readback', 'user_setpoint', 'user_offset', 'user_offset_dir',
+                 'offset_freeze_switch', 'set_use_switch', 'velocity', 'acceleration',
+                 'motor_egu', 'motor_is_moving', 'motor_done_move',
+                 'high_limit_switch', 'low_limit_switch',
+                 'high_limit_travel', 'low_limit_travel',
+                 'motor_stop', 'home_forward', 'home_reverse']
+    configuration_attrs: []
+
