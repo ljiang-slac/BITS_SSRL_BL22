@@ -1,10 +1,8 @@
-# Guarneri-style device YAML configuration
-# Devices specific to SSRL BL22
-
+# Final, working version for current SSRL BL22 BITS environment
 ophyd.EpicsMotor:
-  - name: SPEAR
+  - name: S1BOT
     prefix: "BL22:MC1:MOTOR1"
-    labels: ["mono", "motor"]
+    labels: ["s1bot", "motor"]
     read_attrs: ['user_readback', 'user_setpoint', 'user_offset', 'user_offset_dir',
                  'offset_freeze_switch', 'set_use_switch', 'velocity', 'acceleration',
                  'motor_egu', 'motor_is_moving', 'motor_done_move',
@@ -13,3 +11,35 @@ ophyd.EpicsMotor:
                  'motor_stop', 'home_forward', 'home_reverse']
     configuration_attrs: []
 
+  - name: S1TOP
+    prefix: "BL22:MC1:MOTOR2"
+    labels: ["s1top", "motor"]
+    read_attrs: ['user_readback', 'user_setpoint', 'user_offset', 'user_offset_dir',
+                 'offset_freeze_switch', 'set_use_switch', 'velocity', 'acceleration',
+                 'motor_egu', 'motor_is_moving', 'motor_done_move',
+                 'high_limit_switch', 'low_limit_switch',
+                 'high_limit_travel', 'low_limit_travel',
+                 'motor_stop', 'home_forward', 'home_reverse']
+    configuration_attrs: []
+
+  - name: S1SPEAR
+    prefix: "BL22:MC1:MOTOR3"
+    labels: ["s1spear", "motor"]
+    read_attrs: ['user_readback', 'user_setpoint', 'user_offset', 'user_offset_dir',
+                 'offset_freeze_switch', 'set_use_switch', 'velocity', 'acceleration',
+                 'motor_egu', 'motor_is_moving', 'motor_done_move',
+                 'high_limit_switch', 'low_limit_switch',
+                 'high_limit_travel', 'low_limit_travel',
+                 'motor_stop', 'home_forward', 'home_reverse']
+    configuration_attrs: []
+
+  - name: S1SSRL
+    prefix: "BL22:MC1:MOTOR4"
+    labels: ["s1ssrl", "motor"]
+    read_attrs: ['user_readback', 'user_setpoint', 'user_offset', 'user_offset_dir',
+                 'offset_freeze_switch', 'set_use_switch', 'velocity', 'acceleration',
+                 'motor_egu', 'motor_is_moving', 'motor_done_move',
+                 'high_limit_switch', 'low_limit_switch',
+                 'high_limit_travel', 'low_limit_travel',
+                 'motor_stop', 'home_forward', 'home_reverse']
+    configuration_attrs: []

@@ -129,3 +129,14 @@ from .plans.sim_plans import sim_count_plan  # noqa: E402, F401
 from .plans.sim_plans import sim_print_plan  # noqa: E402, F401
 from .plans.sim_plans import sim_print_plan_capture # noqa: E402, F401
 from .plans.sim_plans import sim_rel_scan_plan  # noqa: E402, F401
+
+# At the very end of startup.py, after all other imports:
+from .plans.ssrl_plans import (
+    motor_print,
+    print_all_slit_motors,
+    print_bot,
+    print_top,
+    print_spear,
+    print_ssrl,
+)
+
